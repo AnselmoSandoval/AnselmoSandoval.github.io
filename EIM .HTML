@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AASMNHS SHS</title>
+
+    <link rel="stylesheet" href="stem.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="LogoAndText">
+          <a href="index.HTML"><img src="logo.png" alt="AASMNHS Logo"></a>
+            <span class="SchoolName">AASMNHS</span>
+        </div>
+        <div class="Navigation">
+          <input type="checkbox" class="menu-icon" id="menu-toggle" />
+        <label for="menu-toggle"></label>
+            <div class="menu-box">
+              <ul class="nav-links">
+            <ul>
+                <li><a href="#Slideshow">Home</a></li>
+                <li><a href="#ICTStrand">About EIM</a></li>
+                <li><a href="#TESDA">National Certificate</a></li>
+                <li><a href="#gallery">Courses</a></li>
+                <li><a href="#job">Jobs</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="Slideshow">
+        <div class="slideshow-container">
+            <div class="slide">
+                <img src="e1.jpg" alt="Slideshow Image 1">
+            </div>
+            <div class="slide">
+                <img src="e2.jpg".JPG" alt="Slideshow Image 2">
+            </div>
+            <div class="slide">
+                <img src="e3.jpg" alt="Slideshow Image 2">
+            </div>
+            <div class="slide">
+                <img src="e4.jpg" alt="Slideshow Image 2">
+            </div>
+            <div class="slideshow-title">
+                <h2>Electrical Installation and Maintenance (EIM) Strand</h2>
+            </div>
+            <div class="slideshow-logo"></div>
+        </div>
+    </section>
+
+    <style>
+      .slideshow-container::after {
+      content: "";
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 300px;
+      height: 300px;
+      background-image: url('eim.png'); /* Replace 'logo.png' with your logo image path */
+      background-size: cover;
+      background-position: center;
+      animation: flip 5.4s infinite; /* Adjust the animation duration as desired */
+      z-index: 3;
+  }
+
+  .logo-container {
+      text-align: center;
+      margin-bottom: 20px;
+  }
+  
+  
+  @keyframes flip {
+      0% {
+          transform: translate(-50%, -50%) rotateY(0deg);
+      }
+      50% {
+          transform: translate(-50%, -50%) rotateY(180deg);
+      }
+      100% {
+          transform: translate(-50%, -50%) rotateY(360deg);
+      }
+  }
+  </style>
+
+    <!-- ICT Strand section -->
+    <section id="ICTStrand">
+        <h2>EIM Strand</h2>
+        <p>The EIM (Electrical Installation and Maintenance) strand is part of the Technical-Vocational track, and it is an industrial art. The students are specialized with analysing signs, electrical symbols and data, interpretation of technical drawings and plans, maintaining of electric hydraulic tools, installation of electric metallic tubing, wire ways and cabletrays; installing telephone terminal cabinet, cable Bridge. And also the selection of wiring devices used for floor and ground fault current interrupter, which is based from the Philippine Electrical Code standards.  </p>
+        <h3>Major Subject: Electrical Installation and Maintenance (EIM)</h3>
+        <p>The major subject of the EIM strand, Electrical Installation and Maintenance, focuses on developing students' expertise in the intricate field of electrical systems, equipping them with the technical proficiency to install, troubleshoot, and maintain electrical infrastructure, ensuring efficient and safe operation in various settings.</p>
+    </section>
+
+    <section id="TESDA">
+        <div class="tesda">
+          <div class="slideshow">
+            <img src="ne1.jpg" alt="Image 1">
+            <img src="ne2.jpg" alt="Image 1">
+            <img src="ne3.jpg" alt="Image 3">
+            <div class="arrow prev">&lt;</div>
+            <div class="arrow next">&gt;</div>
+          </div>
+          <div class="text-container">
+            <h3>National Certificate 1/2/3 for EIM Students</h3>
+            <p>EIM students have the opportunity to earn a National Certificate, recognizing their mastery of electrical installation and maintenance skills, validating their expertise in areas such as electrical wiring, circuit troubleshooting, equipment maintenance, and adherence to safety protocols, thus enhancing their career prospects in the electrical industry.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery">
+        <h2 class="section-title">Courses for EIM Students</h2>
+        <div class="gallery-container">
+          <div class="gallery-item">
+            <div class="subtitle">BS in Industrial Engineering </div>
+            <img src="ce1.png" alt="JCI">
+            <div class="image-overlay">
+              <h3>BS in Industrial Engineering</h3>
+              <p class="container-paragraph">The Bachelor of Science in Industrial Engineering (IE) program is designed to prepare the student for professional work in the design, improvement, installation, and maintenance of integrated systems of people, materials, information, equipment, methods, and energy.</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="subtitle">BS in Electrical Engineering</div>
+            <img src="ce2.jpg" alt="bfp">
+            <div class="image-overlay">
+              <h3>BS in Electrical Engineering</h3>
+              <p class="container-paragraph">The Bachelor of Science in Electrical Engineering is the branch of engineering that deals with the technology of electricity. Electrical engineers work on a wide range of components, devices and systems, from tiny microchips to huge power station generators.</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="subtitle">BS in Electronic Engineering</div>
+            <img src="ce3.jpg" alt="pnp">
+            <div class="image-overlay">
+              <h3>BS in Electronic Engineering</h3>
+              <p class="container-paragraph">The Bachelor of Science in Electronic Engineering (BSECE) is a four-year program which supports various tracks including communications, microelectronics, and biomedical engineering, with addition of artificial intelligence and scientific computing.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section id="job">
+        <h2 class="job-title">Jobs for EIM Students</h2>
+        <div class="job-gallery-container">
+            <div class="job-gallery-item">
+                <img src="je1.jpg" alt="JCI">
+                <div class="job-image-overlay">
+                    <h3>Electrician</h3>
+                </div>
+            </div>
+            <div class="job-gallery-item">
+                <img src="je2.jpg" alt="bfp">
+                <div class="job-image-overlay">
+                    <h3>Maintenance Technician</h3>
+                </div>
+            </div>
+            <div class="job-gallery-item">
+                <img src="je3.jpg" alt="pnp">
+                <div class="job-image-overlay">
+                    <h3>Electrical Engineer</h3>
+                </div>
+            </div>
+            <div class="job-gallery-item">
+                <img src="je4.jpg" alt="sorop">
+                <div class="job-image-overlay">
+                    <h3>Renewable Energy Technician</h3>
+                </div>
+            </div>
+            <div class="job-gallery-item">
+                <img src="je5.png" alt="bfp">
+                <div class="job-image-overlay">
+                    <h3>Electrical Project Manager</h3>
+                </div>
+            </div>
+            <div class="job-gallery-item">
+                <img src="je6.jpg" alt="bfp">
+                <div class="job-image-overlay">
+                    <h3>Electrical Instructor/Trainer</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+      <section id="contact">
+        <div class="footer-container">
+          <div class="contact-section">
+            <h3>Contact Us</h3>
+            <p>P. Balibaguhan, Mabini, Batangas</p>
+            <p>Email: aasmnhs@gmail.com</p>
+            <p>Phone: 123-456-7890</p>
+            <p>Powered by ICT-Amber Batch 2022-2023</p>
+          </div>
+        </div>
+      </section>
+      </footer>
+
+    <script src="ict.js"></script> <!-- Include any JavaScript file if needed -->
+</body>
+
+</html>

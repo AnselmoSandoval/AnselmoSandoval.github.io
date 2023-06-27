@@ -1,0 +1,584 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* global tags */
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: black;
+}
+
+span {
+    font-size: .9rem;
+    color: #757373;
+}
+
+h6 {
+    font-size: 1.1rem;
+    color: rgb(24, 24, 49);
+}
+
+/*navigation*/
+
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 8vw;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+nav img {
+    width: 80px;
+    cursor: pointer;
+}
+
+.SchoolName {
+    color: green ;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.LogoAndText {
+    display: flex;
+    align-items: center;
+}
+
+
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+nav ul li{
+    list-style: none;
+    margin-left: 30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:rgb(16, 109, 39);
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.3s ease;
+
+}
+
+nav ul li a:hover{
+    color: rgb(219, 235, 7);
+
+}
+
+/*home*/
+
+#Home {
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url("bg.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo-container img {
+    width: 200px; /* Adjust the width as needed */
+    height: auto;
+    animation: flipLogo 4s linear infinite;
+    transform-style: preserve-3d;
+}
+/* Hide the logo animation on mobile devices */
+@media screen and (max-width: 768px) {
+    .logo-container img {
+      display: none;
+    }
+  }
+
+@keyframes flipLogo {
+    0% {
+        transform: perspective(800px) rotateY(0);
+    }
+    50% {
+        transform: perspective(800px) rotateY(180deg);
+    }
+    100% {
+        transform: perspective(800px) rotateY(360deg);
+    }
+}
+#Home h2{
+    color: #fff;
+    font-size: 2.4rem;
+    letter-spacing: 1px;
+}
+
+#Home p{
+    width: 50%;
+    color: #fff;
+    font-size: .9rem;
+    line-height: 25px;
+}
+
+#Home .btn{
+    margin-top: 30px;
+}
+
+#Home a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background-color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+#Home a.yellow{
+    color: #fff;
+    background: rgb(236, 236, 89);
+    transition: 0.5s ease;
+
+}
+
+#Home a.yellow:hover{
+    color: yellow;
+    background: #fff;
+
+}
+
+#Home a.green{
+    color: #fff;
+    background: green;
+    transition: 0.5s ease;
+
+}
+
+#Home a.green:hover{
+    color: green;
+    background: #fff;
+
+}
+
+/*Teachers*/
+
+#Teachers {
+    background-color: #f8f8f8;
+    background-image: url("");
+    background-size: 100% 100%;
+    background-position: center;
+    padding: 60px;
+    text-align: center;
+  }
+  
+#Teachers h2 {
+    color: rgb(221, 224, 23);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+#Teachers h2:hover {
+    color: rgb(29, 122, 0);
+  }
+  
+
+.teachers-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 30px;
+    justify-items: center;
+}
+
+.teachers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 250px;
+    height: 250px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+}
+
+.container:hover {
+    background-color: #a0a0a0;
+    transform: scale(1.1);
+}
+
+.container img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.container h3 {
+    color: black;
+    font-size: 1.5rem;
+    margin-top: 15px;
+    transition: color 0.3s ease;
+}
+
+.teacher-description {
+    color: #757373;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+
+#Strands {
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url("bg2.jpg");
+    background-color: #f8f8f8;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 60px 0;
+    text-align: center;
+}
+
+
+#Strands h1 {
+    color: rgb(221, 224, 30);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    transition: color 0.3s ease;
+  }
+  
+  #Strands h1:hover {
+    color: rgb(29, 122, 0);
+  }
+  
+
+.strand-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    justify-items: center;
+}
+
+.strand {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.strand:hover {
+    background-color: rgb(234, 243, 151);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+  }
+
+.strand img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.strand h3 {
+    color: black;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.strand p {
+    color: #757373;
+    font-size: 1.1rem;
+}
+
+.strand a {
+    text-decoration: none;
+    color: inherit;
+   
+}
+
+.strand:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    
+}
+
+.strand:hover a {
+    color: #2367a4;
+}
+
+#Achievements {
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  #Achievements h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .achievements-slider {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .achievement {
+    width: 300px;
+    margin: 0 20px;
+    text-align: center;
+  }
+  
+  .achievement img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .achievement h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .achievement p {
+    font-size: 16px;
+    color: #777;
+  }
+  
+  .slick-prev,
+  .slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .slick-prev {
+    left: 0;
+  }
+  
+  .slick-next {
+    right: 0;
+  }
+
+  footer {
+    background-color: #0e530e;
+    padding: 20px;
+  }
+  
+  .footer-container {
+    text-align: center;
+  }
+  
+  .contact-section {
+    margin-top: 20px;
+  }
+  
+  .contact-section h3 {
+    color: #e5ece5;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-section p {
+    color: #f2f3f1;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    /* Adjustments for mobile devices */
+  
+    nav {
+      flex-direction: column;
+      padding: 1rem;
+    }
+  
+    nav ul {
+      display: none;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+  
+    nav ul li {
+      margin-left: 0;
+    }
+  
+    #Home {
+      padding-top: 20px;
+    }
+  
+    #Home h2 {
+      font-size: 2rem;
+    }
+  
+    #Home p {
+      width: 80%;
+      font-size: 0.8rem;
+    }
+  
+    .logo-container img {
+      width: 150px;
+    }
+  
+    .teachers-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+  
+    .container {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .container img {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .container h3 {
+      font-size: 1.2rem;
+    }
+  
+    .teacher-description {
+      font-size: 0.8rem;
+    }
+  
+    .strand-container {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+  
+    .strand img {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .strand h3 {
+      font-size: 1.2rem;
+    }
+  
+    .strand p {
+      font-size: 0.9rem;
+    }
+}
+/* Your existing CSS code */
+
+/* Show menu icon only in mobile view */
+@media screen and (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+  
+    .menu-icon {
+      display: block;
+      color: rgb(16, 109, 39);
+      font-size: 1.8rem;
+      cursor: pointer;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      /* Adjust the top and right values as needed to position the icon */
+    }
+  
+    .menu-box {
+      display: none;
+      background-color: #fff;
+      position: fixed;
+      width: 100%;
+      top: 80px;
+      left: 0;
+      padding: 20px;
+      z-index: 999;
+    }
+  
+    .menu-box ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .menu-box ul li {
+      margin: 10px 0;
+    }
+  
+    .menu-box ul li a {
+      text-decoration: none;
+      color: rgb(16, 109, 39);
+      font-size: 20px;
+      font-weight: 500;
+      transition: 0.3s ease;
+    }
+  
+    .menu-box ul li a:hover {
+      color: rgb(219, 235, 7);
+    }
+  
+    /* Show menu box when menu icon is checked */
+    #menu-toggle:checked ~ .menu-box {
+      display: block;
+    }
+    
+    /* Hide menu box when menu icon is not checked */
+    #menu-toggle:not(:checked) ~ .menu-box {
+      display: none;
+    }
+     /* Hide the moving logo */
+  .logo {
+    display: none !important;
+  }
+  }
+  
+  /* Additional CSS for desktop view */
+  @media screen and (min-width: 769px) {
+    .menu-icon {
+      display: none;
+    }
+  
+    .nav-links {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+  

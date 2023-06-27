@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AASMNHS SHS</title>
+
+    <link rel="stylesheet" href="stem.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="LogoAndText">
+          <a href="index.HTML"><img src="logo.png" alt="AASMNHS Logo"></a>
+            <span class="SchoolName">AASMNHS</span>
+        </div>
+        <div class="Navigation">
+          <input type="checkbox" class="menu-icon" id="menu-toggle" />
+        <label for="menu-toggle"></label>
+            <div class="menu-box">
+              <ul class="nav-links">
+            <ul>
+                <li><a href="#Slideshow">Home</a></li>
+                <li><a href="#ICTStrand">About ABM</a></li>
+                <li><a href="#TESDA">Business Plan</a></li>
+                <li><a href="#gallery">Courses</a></li>
+                <li><a href="#job">Jobs</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="Slideshow">
+        <div class="slideshow-container">
+            <div class="slide">
+                <img src="a2.jpg" alt="Slideshow Image 1">
+            </div>
+            <div class="slide">
+                <img src="a1.jpg".JPG" alt="Slideshow Image 2">
+            </div>
+            <div class="slide">
+                <img src="a3.jpg" alt="Slideshow Image 2">
+            </div>
+            <div class="slideshow-title">
+                <h2>Accountancy Business and Management (ABM) Strand</h2>
+            </div>
+            <div class="slideshow-logo"></div>
+        </div>
+    </section>
+
+    <style>
+      .slideshow-container::after {
+      content: "";
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 200px;
+      height: 200px;
+      background-image: url('abm.png'); /* Replace 'logo.png' with your logo image path */
+      background-size: cover;
+      background-position: center;
+      animation: flip 5.4s infinite; /* Adjust the animation duration as desired */
+      z-index: 3;
+  }
+
+  .logo-container {
+      text-align: center;
+      margin-bottom: 20px;
+  }
+  
+  
+  @keyframes flip {
+      0% {
+          transform: translate(-50%, -50%) rotateY(0deg);
+      }
+      50% {
+          transform: translate(-50%, -50%) rotateY(180deg);
+      }
+      100% {
+          transform: translate(-50%, -50%) rotateY(360deg);
+      }
+  }
+  </style>
+
+    <!-- ICT Strand section -->
+    <section id="ICTStrand">
+        <h2>ABM Strand</h2>
+        <p>The ABM (Accountancy Business and Management) strand ABM strand focuses on preparing students for careers in the fields of accounting, business, finance, and management. Students who choose this strand will study subjects such as accounting, economics, business management, entrepreneurship, and marketing, among others. The ABM strand is designed to provide students with the knowledge and skills they need to succeed in the business world and to pursue further education in related fields.  </p>
+        <h3>Major Subject:</h3>
+        <p>BUSINESS FINANCE - This subject is focused on the management of money and investments in a business. It covers financial management, investment analysis, risk management, and financial planning. Students will learn how to manage cash flow, analyze financial statements, and make informed decisions about investments and financing options.</p>
+        <p>BUSINESS ETHICS - This subject is focused on the ethical and social responsibilities of businesses. It covers corporate governance, sustainability, and stakeholder management. Students will learn how to make ethical decisions, develop socially responsible business practices, and understand the impact of business decisions on society and the environment.</p>
+        <p>BUSINESS SIMULATION – This subject is designed to provide students with hands-on experience in running a business. Students will be given simulated scenarios and challenges that they will need to solve using business principles and strategies. The goal is to develop critical thinking skills, decision-making abilities, and an understanding of how businesses operate in real-world situations.</p>
+        <p>APPLIED ECONOMICS – This subject is focused on the practical application of economic principles and theories to real-world situations. It covers topics such as microeconomics, macroeconomics, international trade, and the global economy. Students will learn how to analyze economic data, make informed decisions, and develop policies that can help address social and economic issues.</p>
+        <p>ENTREPRENEURSHIP – This subject is focused on developing the skills and mindset needed to start and run a successful business. It covers topics such as business planning, market research, financial management, marketing, and innovation. Students will learn how to identify business opportunities, develop business plans, and create and implement strategies that can help grow their businesses.</p>
+    </section>
+
+    <section id="TESDA">
+        <div class="tesda">
+          <div class="slideshow">
+            <img src="p1.jpg" alt="Image 1">
+            <img src="p2.jpg" alt="Image 1">
+            <img src="p3.jpg" alt="Image 3">
+            <img src="p4.jpg" alt="Image 3">
+            <div class="arrow prev">&lt;</div>
+            <div class="arrow next">&gt;</div>
+          </div>
+          <div class="text-container">
+            <h3>Products of ABM Students for their Business Plan</h3>
+            <p>The business products conceptualized by ABM students for their business plan demonstrate innovative ideas, market viability, and strategic planning, showcasing their ability to develop compelling products or services that meet customer needs, drive revenue growth, and establish a competitive edge in the market.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery">
+        <h2 class="section-title">Courses for ABM Students</h2>
+        <div class="gallery-container">
+          <div class="gallery-item">
+            <div class="subtitle">BS in Accountancy </div>
+            <img src="ca1.jpg" alt="JCI">
+            <div class="image-overlay">
+              <h3>BS in Accountancy</h3>
+              <p class="container-paragraph">The Bachelor of Science in Accountancy program is a five-year program focused on subjects in financial, public, and managerial accounting, auditing, administration, business laws, and taxation.</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="subtitle">BS in Accounting Technology</div>
+            <img src="ca2.jpg" alt="bfp">
+            <div class="image-overlay">
+              <h3>BS in Accounting Technology</h3>
+              <p class="container-paragraph">The Bachelor of Science in Accounting Technology is a four-year degree program that centers on the basic accounting skills, business, and finance skills that will help students pursue careers in bookkeeping, auditing, tax preparation, and business analysis.</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="subtitle">BS in Entrepreneurship</div>
+            <img src="ca3.jpg" alt="pnp">
+            <div class="image-overlay">
+              <h3>BS in Entrepreneurship</h3>
+              <p class="container-paragraph">The Bachelor of Science in Entrepreneurship is a four-year degree program which center on how to start and manage a business by combining management, accounting, finance, and marketing principles.</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="subtitle">BS in Finance</div>
+            <img src="ca4.jpg" alt="pnp">
+            <div class="image-overlay">
+              <h3>BS in Finance</h3>
+              <p class="container-paragraph">The Bachelor of Science in Finance is a four-year degree program that provides students with a strong foundation on theories, principles, and concepts that equip them with relevant technical and analytical skills necessary in financial decision-making, cognizant of a dynamic domestic and global business environments, and mindful of their role in nation-building.</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="subtitle">BS in Business Management</div>
+            <img src="ca5.jpg" alt="pnp">
+            <div class="image-overlay">
+              <h3>BS in Business Management</h3>
+              <p class="container-paragraph">The Bachelor of Science in Business Management focuses on developing students' knowledge and skills in various aspects of business administration and management. It aims to provide students with a strong foundation in business principles, preparing them for a wide range of managerial roles in various industries or for further studies in business-related disciplines.</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="subtitle">BS in Tourism Management</div>
+            <img src="ca6.jpg" alt="pnp">
+            <div class="image-overlay">
+              <h3>BS in Tourism Management</h3>
+              <p class="container-paragraph">The Bachelor of Science in Tourism Management is an undergraduate degree program that provides students with a comprehensive understanding of the tourism and hospitality industry. It equips them with the knowledge and skills needed for various roles in hotels, travel agencies, event management, destination management, and tourism marketing.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section id="job">
+        <h2 class="job-title">Jobs for ABM Students</h2>
+        <div class="job-gallery-container">
+            <div class="job-gallery-item">
+                <img src="ja1.jpg" alt="JCI">
+                <div class="job-image-overlay">
+                    <h3>Entrepreneur</h3>
+                </div>
+            </div>
+            <div class="job-gallery-item">
+                <img src="ja2.jpg" alt="bfp">
+                <div class="job-image-overlay">
+                    <h3>Accountant</h3>
+                </div>
+            </div>
+            <div class="job-gallery-item">
+                <img src="ja6.jpg" alt="bfp">
+                <div class="job-image-overlay">
+                    <h3>Sales Manager</h3>
+                </div>
+            </div>
+            <div class="job-gallery-item">
+                <img src="ja3.jpg" alt="pnp">
+                <div class="job-image-overlay">
+                    <h3>Business Consultant</h3>
+                </div>
+            </div>
+            <div class="job-gallery-item">
+                <img src="ja4.jpg" alt="sorop">
+                <div class="job-image-overlay">
+                    <h3>Financial Analyst</h3>
+                </div>
+            </div>
+            <div class="job-gallery-item">
+                <img src="ja5.png" alt="bfp">
+                <div class="job-image-overlay">
+                    <h3>Marketing Executive</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+      <section id="contact">
+        <div class="footer-container">
+          <div class="contact-section">
+            <h3>Contact Us</h3>
+            <p>P. Balibaguhan, Mabini, Batangas</p>
+            <p>Email: aasmnhs@gmail.com</p>
+            <p>Phone: 123-456-7890</p>
+            <p>Powered by ICT-Amber Batch 2022-2023</p>
+          </div>
+        </div>
+      </section>
+      </footer>
+
+    <script src="ict.js"></script> <!-- Include any JavaScript file if needed -->
+</body>
+
+</html>
