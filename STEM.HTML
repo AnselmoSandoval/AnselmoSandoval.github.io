@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AASMNHS SHS</title>
+
+    <link rel="stylesheet" href="STEM.CSS">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="LogoAndText">
+          <a href="index.HTML"><img src="logo.png" alt="AASMNHS Logo"></a>
+            <span class="SchoolName">AASMNHS</span>
+        </div>
+        <div class="Navigation">
+          <input type="checkbox" class="menu-icon" id="menu-toggle" />
+        <label for="menu-toggle"></label>
+            <div class="menu-box">
+              <ul class="nav-links">
+            <ul>
+                <li><a href="#Slideshow">Home</a></li>
+                <li><a href="#ICTStrand">About STEM</a></li>
+                <li><a href="#TESDA">Prototype</a></li>
+                <li><a href="#gallery">Courses</a></li>
+                <li><a href="#job">Jobs</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="Slideshow">
+        <div class="slideshow-container">
+            <div class="slide">
+                <img src="stemSHA.jpg" alt="Slideshow Image 1">
+            </div>
+            <div class="slide">
+                <img src="st2.JPG" alt="Slideshow Image 2">
+            </div>
+            <div class="slide">
+                <img src="st1.JPG" alt="Slideshow Image 2">
+            </div>
+            <div class="slide">
+                <img src="st3.JPG" alt="Slideshow Image 2">
+            </div>
+            <div class="slideshow-title">
+                <h2>Science, Technology, Engineering, and Mathematics (STEM) Strand</h2>
+            </div>
+            <div class="slideshow-logo"></div>
+        </div>
+    </section>
+
+    <style>
+        .slideshow-container::after {
+        content: "";
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 350px;
+        height: 350px;
+        background-image: url('stemSHI.png'); /* Replace 'logo.png' with your logo image path */
+        background-size: cover;
+        background-position: center;
+        animation: flip 5.4s infinite; /* Adjust the animation duration as desired */
+        z-index: 3;
+    }
+
+    .logo-container {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    
+    @keyframes flip {
+        0% {
+            transform: translate(-50%, -50%) rotateY(0deg);
+        }
+        50% {
+            transform: translate(-50%, -50%) rotateY(180deg);
+        }
+        100% {
+            transform: translate(-50%, -50%) rotateY(360deg);
+        }
+    }
+    </style>
+
+    <!-- ICT Strand section -->
+    <section id="ICTStrand">
+        <h2>STEM Strand</h2>
+        <p>The STEM (Science,Technology,Engineering, and Mathematics) refers to any subjects that fall under these four disciplines. Students in senior high school will participate in educational activities that will sharpen their knowledge and abilities in data analysis, real-world impacts, and research techniques.</p>
+        <h3>Major Subject and Strand Focus:</h3>
+        <p>GENERAL CHEMISTRY- Learning basic concepts including atomic structure, molecular structure, chemical bonding, and acids and bases are covered in a general chemistry course.</p>
+        <p>GENERAL PHYSICS- Using techniques and ideas from algebra, geometry, trigonometry, graphical analysis, and basic calculus, study of the mechanics of particles, rigid bodies, fluids, waves, heat, and thermodynamics.</p>
+    </section>
+
+    <section id="TESDA">
+        <div class="tesda">
+          <div class="slideshow">
+            <img src="pr1.jpg" alt="Image 1">
+            <img src="pr2.jpg" alt="Image 1">
+            <div class="arrow prev">&lt;</div>
+            <div class="arrow next">&gt;</div>
+          </div>
+          <div class="text-container">
+            <h3>Prototype of STEM Students</h3>
+            <p>The prototype designed by the STEM students for their research subject showcases innovative methodologies and cutting-edge technologies, revolutionizing the field and paving the way for groundbreaking advancements.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery">
+        <h2 class="section-title">Courses for STEM Students</h2>
+        <div class="gallery-container">
+          <div class="gallery-item">
+            <div class="subtitle">Bachelor of Science in Engineering</div>
+            <img src="c1.jpg" alt="Img1">
+            <div class="image-overlay">
+              <h3>BS in Engineering</h3>
+              <p class="container-paragraph">This kind of engineering degree equips graduates with the knowledge and abilities to work as professionals in a wide range of sectors. Engineering bachelor's degree candidates frequently concentrate in fields like computer, electrical, mechanical, or industrial engineering</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="subtitle">Bachelor of Science in Data Science</div>
+            <img src="c2.jpg" alt="Img2">
+            <div class="image-overlay">
+              <h3>BS in Data Science</h3>
+              <p class="container-paragraph">Data Science is a subfield of computer science that focuses on programming, analytics, and statistics. Building hardware and writing software are topics covered by computer science</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="subtitle">Bachelor of Science in Applied Mathematics</div>
+            <img src="c3.jpg" alt="img3">
+            <div class="image-overlay">
+              <h3>BS in Applied Mathematics</h3>
+              <p class="container-paragraph">Is a four-year program that gives students a solid foundation in various mathematical approaches and how they can be used to data analysis, optimization, and modeling. Arithmetic, algebra, geometry, and analysis are the study areas covered in this course</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="subtitle">BS in Health Sciences / Life Sciences</div>
+            <img src="c6.jpg" alt="img6">
+            <div class="image-overlay">
+              <h3>BS in Health Sciences / Life Sciences</h3>
+              <p class="container-paragraph">A student can study the human species and its body with this curriculum. This program offers a comprehensive education on how people live and interact with the environment.</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="subtitle">Bachelor of Science in Architecture</div>
+            <img src="c4.jpg" alt="img4">
+            <div class="image-overlay">
+              <h3>BS in Architecture</h3>
+              <p class="container-paragraph">Is a ten-semester pre-professional undergraduate degree that, by combining discipline coursework with continuing, real-world design experience, prepares students for the BAC's expedited two-year master of architecture program</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="subtitle">Bachelor of Science in Applied Physics</div>
+            <img src="c7.jpg" alt="img7">
+            <div class="image-overlay">
+              <h3>BS in Applied Physics</h3>
+              <p class="container-paragraph">Is the application of all physical theories to a wide range of real-world issues in engineering, research, and business. The pragmatic and abstract elements of physics are combined in this BS in Applied Physics curriculum</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="subtitle">Bachelor of Science in Food Technology</div>
+            <img src="c8.jpg" alt="img8">
+            <div class="image-overlay">
+              <h3> BS in Food Technology</h3>
+              <p class="container-paragraph">A four-year program that emphasizes the food's scientific preparation, processing, and delivery. The practice of turning raw resources into food comprises a variety of methods and procedures</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="subtitle">BS in Biology / Biochemistry / Chemistry</div>
+            <img src="c9.jpg" alt="img9">
+            <div class="image-overlay">
+              <h3>BS in Biology / Biochemistry / Chemistry</h3>
+              <p class="container-paragraph">This examines the molecular basis of life and the interface between biology and chemistry.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section id="job">
+        <h2 class="job-title">Jobs for STEM Students</h2>
+        <div class="job-gallery-container">
+            <div class="job-gallery-item">
+                <img src="j1.jpg" alt="JCI">
+                <div class="job-image-overlay">
+                    <h3>Technical Writer</h3>
+                </div>
+            </div>
+            <div class="job-gallery-item">
+                <img src="j2.jpg" alt="pnp">
+                <div class="job-image-overlay">
+                    <h3>Biotechnologist</h3>
+                </div>
+            </div>
+            <div class="job-gallery-item">
+                <img src="JJ.jpg" alt="sorop">
+                <div class="job-image-overlay">
+                    <h3>Engineers</h3>
+                </div>
+            </div>
+            <div class="job-gallery-item">
+                <img src="j4.png" alt="bfp">
+                <div class="job-image-overlay">
+                    <h3>Computer Scientist</h3>
+                </div>
+            </div>
+            <div class="job-gallery-item">
+                <img src="j5.jpg" alt="bfp">
+                <div class="job-image-overlay">
+                    <h3>Environmental Scientist</h3>
+                </div>
+            </div>
+            <div class="job-gallery-item">
+                <img src="j6.jpg" alt="bfp">
+                <div class="job-image-overlay">
+                    <h3>Architect</h3>
+                </div>
+            </div>
+            <div class="job-gallery-item">
+                <img src="j7.jpg" alt="bfp">
+                <div class="job-image-overlay">
+                    <h3>Health Care Professional</h3>
+                </div>
+            </div>
+            <div class="job-gallery-item">
+                <img src="j8.jpg" alt="bfp">
+                <div class="job-image-overlay">
+                    <h3>Statistician</h3>
+                </div>
+            </div>
+            <div class="job-gallery-item">
+                <img src="j9.jpg" alt="bfp">
+                <div class="job-image-overlay">
+                    <h3>Food Scientist</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+      <section id="contact">
+        <div class="footer-container">
+          <div class="contact-section">
+            <h3>Contact Us</h3>
+            <p>P. Balibaguhan, Mabini, Batangas</p>
+            <p>Email: aasmnhs@gmail.com</p>
+            <p>Phone: 123-456-7890</p>
+            <p>Powered by ICT-Amber Batch 2022-2023</p>
+          </div>
+        </div>
+      </section>
+      </footer>
+
+    <script src="ict.js"></script> <!-- Include any JavaScript file if needed -->
+</body>
+
+</html>

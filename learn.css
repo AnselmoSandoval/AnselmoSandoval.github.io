@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+#background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)),url("aasmnhs.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+/* Add this style to adjust the z-index of other elements on the page */
+nav {
+    position: relative;
+    z-index: 1;
+}
+
+/* global tags */
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: black;
+}
+
+span {
+    font-size: .9rem;
+    color: #757373;
+}
+
+h6 {
+    font-size: 1.1rem;
+    color: rgb(24, 24, 49);
+}
+
+/*navigation*/
+
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 8vw;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+nav img {
+    width: 80px;
+    cursor: pointer;
+}
+
+.SchoolName {
+    color: green ;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.LogoAndText {
+    display: flex;
+    align-items: center;
+}
+
+
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+nav ul li{
+    list-style: none;
+    margin-left: 30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:rgb(16, 109, 39);
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.3s ease;
+
+}
+
+nav ul li a:hover{
+    color: rgb(219, 235, 7);
+
+}
+
+/*home*/
+
+#Home {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo-container img {
+    width: 200px; /* Adjust the width as needed */
+    height: auto;
+    animation: flipLogo 4s linear infinite;
+    transform-style: preserve-3d;
+}
+
+@keyframes flipLogo {
+    0% {
+        transform: perspective(800px) rotateY(0);
+    }
+    50% {
+        transform: perspective(800px) rotateY(180deg);
+    }
+    100% {
+        transform: perspective(800px) rotateY(360deg);
+    }
+}
+
+#Home h2{
+    color: #fff;
+    font-size: 3.5rem;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+/* Newspaper layout */
+#Newspaper {
+    padding: 20px 0 10px 0; /* Updated padding to adjust spacing */
+    text-align: center;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 50px;
+}
+
+.newspaper-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+.newspaper-image {
+    flex: 1;
+    max-width: 300px;
+}
+
+.newspaper-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.second-section {
+    /* CSS properties for the second section */
+    margin-left: 20px; /* Update margin as desired */
+    margin-right: 30px; /* Update margin as desired */
+}
+
+.second-section .newspaper-container {
+    margin-left: 200px; /* Adjust the left margin as needed */
+    margin-right: 200px; /* Adjust the right margin as needed */
+}
+
+.second-picture-container {
+    /* CSS properties for the second section image container */
+    max-width: 480px; /* Update size as desired */
+    margin-left: auto; /* Align to the right */
+}
+
+.second-section .newspaper-content h3 {
+    margin-bottom: 20px; /* Update margin as desired */
+}
+
+.second-section .newspaper-content p {
+    margin-left: 5px; /* Update margin as desired */
+}
+
+.newspaper-content {
+    flex: 1;
+    padding: 0 40px;
+    text-align: left;
+}
+
+.newspaper-content h3 {
+    font-size: 1.8rem;
+    color: #e2be1a;
+    font-weight: 600;
+    margin-bottom: 60px;
+}
+
+.newspaper-content p {
+    font-size: 1rem;
+    color: #ffffff;
+    line-height: 1.5;
+}
+
+#gallery {
+    text-align: center;
+    padding: 60px 0;
+  }
+  
+  .section-title {
+    font-size: 25px;
+    margin-bottom: 30px;
+    color: rgba(14, 193, 4, 0.87);
+  }
+
+  .section-title:hover {
+    color: #e2be1a;
+  }  
+  
+  .gallery-item {
+    display: inline-block;
+    margin: 20px;
+    margin-bottom: 70px;
+    position: relative;
+  }
+  
+  .gallery-item a {
+    display: block;
+  }
+  
+  .gallery-item img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 30px;
+  }
+  
+  .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 30px;
+    transition: opacity 0.3s ease;
+  }
+  
+  .gallery-item:hover .image-overlay {
+    opacity: 1;
+  }
+  
+  .image-overlay h3 {
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    padding: 10px;
+  }
+
+  section {
+    text-align: center;
+  }
+  
+  .section1-title {
+    font-size: 25px;
+    margin-bottom: 10px;
+    box-shadow: 2px 0px 3px white;
+    color: rgba(14, 193, 4, 0.87);
+  }
+  
+  .section1-title:hover {
+    color: #e2be1a;
+  }
+  
+  .container {
+    padding: 30px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    margin: 20px;
+  }
+  
+  .container img {
+    width: 500px;
+    height: 400px;
+    border-radius: 20px;
+  }
+  
+  .container-subtitle {
+    font-size: 20px;
+    margin-top: 5px;
+    color: #fff;
+  }
+
+  .container-subtitle:hover {
+    color: #e2be1a;
+  }
+  
+  footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  .footer-container {
+    text-align: center;
+  }
+  
+  .contact-section {
+    margin-top: 20px;
+  }
+  
+  .contact-section h3 {
+    color: #0c2702;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-section p {
+    color: #0c2702;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  

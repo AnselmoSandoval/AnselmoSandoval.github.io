@@ -1,0 +1,531 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* global tags */
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: black;
+}
+
+span {
+    font-size: .9rem;
+    color: #757373;
+}
+
+h6 {
+    font-size: 1.1rem;
+    color: rgb(24, 24, 49);
+}
+
+/* Navigation styles */
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 8vw;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+    z-index: 100;
+}
+
+nav img {
+    width: 80px;
+    cursor: pointer;
+}
+
+.SchoolName {
+    color: green;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.LogoAndText {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(16, 109, 39);
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: rgb(219, 235, 7);
+}
+  
+    #Slideshow {
+        position: relative;
+        height: 200px; /* Adjust the height as desired */
+        max-height: 20vh; /* Adjust the max-height as desired */
+        z-index: 0; /* Set a lower z-index value */
+    }
+    
+    .slideshow-container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1; /* Set a higher z-index value */
+    }
+    
+    .slide {
+        flex: 0 0 100%;
+    }
+    
+    .slide::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(32, 31, 25, 0.5); /* Set the desired tint color and opacity */
+        z-index: 2;
+    }
+    
+    .slideshow-container img {
+        width: 100%;
+        height: 900px; /* Set a specific height for the image */
+        object-fit: cover; /* Maintain the aspect ratio and cover the container */
+    }
+    
+    .slideshow-title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 2; /* Set an even higher z-index value */
+    }
+    
+    .slideshow-title h2 {
+        font-size: 2.6rem;
+        color: white;
+    }
+    
+    .slideshow-title h2:hover {
+        color: #e2be1a;
+    }
+    
+/* ICT Strand section styles */
+#ICTStrand {
+    padding: 50px;
+    text-align: left;
+    margin-top: 850px; /* Add margin to push the section down */
+    margin-left: 100px;
+    margin-right: 90px;
+    overflow: hidden; /* Hide the overflow to remove the extra space */
+    background-color: #f9f9f9;
+}
+
+#ICTStrand h2 {
+    color: green;
+    font-size: 2.5rem;
+    margin-bottom: 20px; /* Reduce the margin-bottom as desired */
+}
+
+#ICTStrand h3 {
+    color:#e2be1a;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+#ICTStrand p {
+    color: #555;
+    font-size: 1.3rem;
+    line-height: 1.8;
+    margin-bottom: 30px; /* Reduce the margin-bottom as desired */
+}
+
+#ICTStrand ul {
+    list-style: disc;
+    color: #555;
+    font-size: 1.3rem;
+    margin-top: 20px;
+}
+
+#ICTStrand ul li {
+    margin-bottom: 10px; /* Reduce the margin-bottom as desired */
+}
+  
+#TESDA {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  #TESDA .tesda {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  #TESDA .slideshow {
+    position: relative;
+    width: 600px;
+    height: 500px;
+    margin-right: 50px;
+    overflow: hidden;
+  }
+  
+  #TESDA .slideshow img {
+    width: 100%;
+    height: auto;
+  }
+  
+  #TESDA .slideshow .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  #TESDA .slideshow .arrow.prev {
+    left: 10px;
+  }
+  
+  #TESDA .slideshow .arrow.next {
+    right: 10px;
+  }
+  
+  #TESDA .text-container {
+    width: 500px;
+    height: 400px;
+    background-color: fff;
+    padding: 10px;
+   text-align: left;
+  }
+  
+  #TESDA .text-container h3 {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+    color: rgb(16, 109, 39);
+  }
+
+  #TESDA .text-container h3:hover {
+    color: #e2be1a;
+  }
+
+  #TESDA .text-container p {
+    margin-bottom: 0;
+    font-size: 1.2rem;
+    color: #333;
+  }  
+
+  #gallery {
+    text-align: center;
+    padding: 60px 0;
+    background-color: #f5f5f5; /* Add the background color here */
+  }
+  
+  .section-title {
+    color: rgb(16, 109, 39);
+    font-size: 2.4rem;
+    margin-bottom: 30px;
+    margin-left: 100px;
+    text-align: left;
+}
+  
+  .gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .gallery-item {
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .gallery-item img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 30px;
+  }
+  
+  .subtitle {
+    color: #e2be1a;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: #333;
+    margin-bottom: 5px;
+  }
+  
+  .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 30px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .gallery-item:hover .image-overlay {
+    opacity: 1;
+  }
+  
+  .image-overlay h3 {
+    color: #fff;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .container-paragraph {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #fff;
+    padding: 0 10px;
+    text-align: center;
+  }
+  
+  #job {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.job-title {
+    color: rgb(16, 109, 39);
+    font-size: 2.4rem;
+    margin-bottom: 30px;
+    margin-left: 100px;
+    text-align: left;
+}
+
+.job-title:hover {
+    color: #e2be1a;
+}
+
+.job-gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.job-gallery-item {
+    display: inline-block;
+    margin: 20px;
+    margin-bottom: 70px;
+    position: relative;
+}
+
+.job-gallery-item img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.job-image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 30px;
+    transition: opacity 0.3s ease;
+}
+
+.job-gallery-item:hover .job-image-overlay {
+    opacity: 1;
+}
+
+.job-image-overlay h3 {
+    color: #fff;
+    font-size: 28px;
+    text-align: center;
+    padding: 10px;
+}
+
+footer {
+    background-color: rgb(16, 109, 39);
+    padding: 20px;
+  }
+  
+  .footer-container {
+    text-align: center;
+  }
+  
+  .contact-section {
+    margin-top: 20px;
+  }
+  
+  .contact-section h3 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-section p {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+/* Media queries */
+@media (max-width: 768px) {
+    nav {
+        padding: 10px;
+    }
+
+    nav .LogoAndText img {
+        width: 40px;
+    }
+
+    nav .SchoolName {
+        font-size: 1.4rem;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+    }
+
+    #Home h2 {
+        font-size: 2rem;
+    }
+
+    #Home p {
+        width: 80%;
+        font-size: 0.8rem;
+    }
+
+    #Home a {
+        font-size: 0.8rem;
+    }
+
+    #ICTStrand p,
+    #Jobs p,
+    #CSS p {
+        font-size: 0.9rem;
+    }
+}
+/* Show menu icon only in mobile view */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+    color: rgb(16, 109, 39);
+    font-size: 1.8rem;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    /* Adjust the top and right values as needed to position the icon */
+  }
+
+  .menu-box {
+    display: none;
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 80px;
+    left: 0;
+    padding: 20px;
+    z-index: 999;
+  }
+
+  .menu-box ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-box ul li {
+    margin: 10px 0;
+  }
+
+  .menu-box ul li a {
+    text-decoration: none;
+    color: rgb(16, 109, 39);
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.3s ease;
+  }
+
+  .menu-box ul li a:hover {
+    color: rgb(219, 235, 7);
+  }
+
+  /* Show menu box when menu icon is checked */
+  #menu-toggle:checked ~ .menu-box {
+    display: block;
+  }
+  
+  /* Hide menu box when menu icon is not checked */
+  #menu-toggle:not(:checked) ~ .menu-box {
+    display: none;
+  }
+   /* Hide the moving logo */
+.logo {
+  display: none !important;
+}
+}
+
+/* Additional CSS for desktop view */
+@media screen and (min-width: 769px) {
+  .menu-icon {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+

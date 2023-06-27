@@ -1,0 +1,124 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('aasmnhs.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    scroll-behavior: smooth; /* Add this line for smooth scrolling */
+  }
+  
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(4, 42, 4, 0.4); /* Adjust the opacity value as needed */
+    z-index: -1;
+  }
+
+/* Header styles */
+header {
+  background-color: #067e20;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.back-link {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .back-arrow {
+    font-size: 20px;
+    margin-right: 5px;
+  }
+
+.back-link:hover .back-arrow,
+.back-link:hover {
+  color: yellow;
+}
+
+h1 {
+  margin: 0;
+  font-size: 30px;
+}
+
+header:hover h1 {
+    color: yellow;
+  }
+  
+/* Navigation styles */
+nav {
+  background-color: #fff;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+/* Main content styles */
+main {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  
+}
+
+h2 {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #fff;
+  line-height: 1.5;
+}
+
+ul {
+  margin-left: 20px;
+  color: #fff;
+}
+
+/* Footer styles */
+footer {
+    background-color: #067e20;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+
+footer p {
+  margin: 0;
+}
