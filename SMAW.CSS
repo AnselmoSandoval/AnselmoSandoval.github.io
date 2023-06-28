@@ -144,7 +144,7 @@ nav ul li a:hover {
         transform: translate(-50%, -50%);
         width: 200px;
         height: 200px;
-        background-image: url('ict.png'); /* Replace 'logo.png' with your logo image path */
+        background-image: url('weldilogo.png'); /* Replace 'logo.png' with your logo image path */
         background-size: cover;
         background-position: center;
         animation: flip 5.4s infinite; /* Adjust the animation duration as desired */
