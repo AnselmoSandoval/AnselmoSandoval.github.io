@@ -14,18 +14,19 @@
     <!-- Navigation -->
     <nav>
         <div class="LogoAndText">
-            <a href="index.HTML"><img src="logo.png" alt="AASMNHS Logo"></a>
-            <span class="SchoolName">HE</span>
+             <a href="index.HTML"><img src="logo.png" alt="AASMNHS Logo"></a>
+            <span class="SchoolName">AASMNHS</span>
         </div>
         <div class="Navigation">
-          <input type="checkbox" class="menu-icon" id="menu-toggle" />
-        <label for="menu-toggle"></label>
-            <div class="menu-box">
-              <ul class="nav-links">
+            <input type="checkbox" class="menu-icon" id="menu-toggle" />
+          <label for="menu-toggle"></label>
+              <div class="menu-box">
+                <ul class="nav-links">
             <ul>
                 <li><a href="#Slideshow">Home</a></li>
-                <li><a href="#ICTStrand">About ICT</a></li>
-                <li><a href="#TESDA">National Certificate</a></li>
+                <li><a href="#ICTStrand">About</a></li>
+                <li><a href="#picture-section">Work Immersion</a></li>
+                <li><a href="#TESDA">N.C</a></li>
                 <li><a href="#gallery">Courses</a></li>
                 <li><a href="#job">Jobs</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -36,127 +37,287 @@
     <section id="Slideshow">
         <div class="slideshow-container">
             <div class="slide">
-                <img src="icty.jpg" alt="Slideshow Image 1">
+                <img src="he0.jpg" alt="Slideshow Image 1">
             </div>
             <div class="slide">
-                <img src="s1.JPG" alt="Slideshow Image 2">
+                <img src="he6.jpg".JPG" alt="Slideshow Image 2">
             </div>
             <div class="slide">
-                <img src="s2.JPG" alt="Slideshow Image 2">
+                <img src="he2.jpg" alt="Slideshow Image 2">
             </div>
             <div class="slide">
-                <img src="s3.JPG" alt="Slideshow Image 2">
+                <img src="he5.jpg" alt="Slideshow Image 2">
             </div>
             <div class="slide">
-                <img src="s4.jpg" alt="Slideshow Image 2">
+                <img src="he4.jpg" alt="Slideshow Image 2">
             </div>
             <div class="slide">
-                <img src="s0.jpg" alt="Slideshow Image 2">
+                <img src="he7.jpg" alt="Slideshow Image 2">
             </div>
             <div class="slideshow-title">
-                <h2>Information and Communication Technology (ICT) Strand</h2>
+                <h2>Home Economics (HE) Strand</h2>
             </div>
             <div class="slideshow-logo"></div>
         </div>
     </section>
 
+    <style>
+      .slideshow-container::after {
+      content: "";
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 250px;
+      height: 250px;
+      background-image: url('helo.png'); /* Replace 'logo.png' with your logo image path */
+      background-size: cover;
+      background-position: center;
+      animation: flip 5.4s infinite; /* Adjust the animation duration as desired */
+      z-index: 3;
+  }
+
+  .logo-container {
+      text-align: center;
+      margin-bottom: 20px;
+  }
+  
+  
+  @keyframes flip {
+      0% {
+          transform: translate(-50%, -50%) rotateY(0deg);
+      }
+      50% {
+          transform: translate(-50%, -50%) rotateY(180deg);
+      }
+      100% {
+          transform: translate(-50%, -50%) rotateY(360deg);
+      }
+  }
+  </style>
 
     <!-- ICT Strand section -->
     <section id="ICTStrand">
-        <h2>ICT Strand</h2>
-        <p>The ICT (Information and Communication Technology) strand focuses on computer systems servicing and other related skills. Students in this strand learn about hardware and software troubleshooting, network setup and maintenance, and other fundamental ICT concepts.</p>
-        <h3>Major Subject: Computer System Servicing (CSS)</h3>
-        <p>Computer System Servicing is a major subject in the ICT strand that provides students with the knowledge and skills needed to assemble, disassemble, maintain, and troubleshoot computer systems and peripherals. Students learn about hardware and software installation, configuration, and diagnostics.</p>
+        <h2>HE Strand</h2>
+        <p>The HE (Home Economics) strand offers various specializations that can lead to livelihood projects at home. This strand aims to give you job-ready skills that can help you in finding the right employment.</p>
+        <h3>Major Subject:</h3>
+        <p>WORK IMMERSION — refers to exposing students to the actual workplace setting and enriching the competencies provided by the school.
+        </p>
     </section>
+
+    <section id="picture-section">
+        <h2 class="wi-title">Work Immersion Experience of H.E. Students</h2>
+        <div class="picture-container">
+          <button class="nav-button" id="prev-button">&#8249;</button>
+          <img src="we1.jpg" alt="Image 1" class="picture">
+          <img src="we2.jpg" alt="Image 2" class="picture">
+          <img src="we3.jpg" alt="Image 3" class="picture">
+          <img src="we4.jpg" alt="Image 1" class="picture">
+          <img src="we5.jpg" alt="Image 2" class="picture">
+          <img src="we7.jpg" alt="Image 3" class="picture">
+          <img src="we6.jpg" alt="Image 1" class="picture">
+          <img src="we8.jpg" alt="Image 2" class="picture">
+          <img src="we9.jpg" alt="Image 3" class="picture">
+          <img src="we10.jpg" alt="Image 1" class="picture">
+          <img src="we11.jpg" alt="Image 2" class="picture">
+          <img src="we12.jpg" alt="Image 3" class="picture">
+          <button class="nav-button" id="next-button">&#8250;</button>
+        </div>
+      </section>
+      
+      <style>
+        #picture-section {
+          text-align: left;
+          padding: 60px 0;
+        }
+      
+        .wi-title {
+          font-size: 25px;
+          margin-bottom: 40px;
+          margin-left: 70px;
+          color: rgb(16, 109, 39);
+        }
+      
+        .picture-container {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 20px;
+        }
+      
+        .picture {
+          width: 400px;
+          height: 400px;
+          object-fit: cover;
+          border-radius: 30px;
+          margin: 0 20px; /* Adjust the margin as needed */
+        }
+      
+        .nav-button {
+          position: absolute;
+          top: calc(50% - 15px); /* Adjust the value to position the buttons vertically */
+          font-size: 50px;
+          background: none;
+          border: none;
+          color: rgb(16, 109, 39);
+          cursor: pointer;
+        }
+      
+        #prev-button {
+          left: 40px; /* Adjust the position as needed */
+        }
+      
+        #next-button {
+          right: 40px; /* Adjust the position as needed */
+        }
+      </style>      
+      
+      <script>
+        const prevButton = document.getElementById('prev-button');
+        const nextButton = document.getElementById('next-button');
+        const pictures = document.querySelectorAll('.picture');
+        const numPictures = pictures.length;
+        const picturesPerSet = 3;
+        const numSets = Math.ceil(numPictures / picturesPerSet);
+        let currentSetIndex = 0;
+      
+        function showPictures(setIndex) {
+          const startIndex = setIndex * picturesPerSet;
+          const endIndex = Math.min(startIndex + picturesPerSet, numPictures);
+      
+          for (let i = 0; i < numPictures; i++) {
+            if (i >= startIndex && i < endIndex) {
+              pictures[i].style.display = 'block';
+            } else {
+              pictures[i].style.display = 'none';
+            }
+          }
+        }
+      
+        function goToPreviousSet() {
+          currentSetIndex--;
+          if (currentSetIndex < 0) {
+            currentSetIndex = numSets - 1;
+          }
+          showPictures(currentSetIndex);
+        }
+      
+        function goToNextSet() {
+          currentSetIndex++;
+          if (currentSetIndex >= numSets) {
+            currentSetIndex = 0;
+          }
+          showPictures(currentSetIndex);
+        }
+      
+        prevButton.addEventListener('click', goToPreviousSet);
+        nextButton.addEventListener('click', goToNextSet);
+      
+        // Show the initial set of pictures
+        showPictures(currentSetIndex);
+      </script>
+      
 
     <section id="TESDA">
         <div class="tesda">
           <div class="slideshow">
-            <img src="nc1.jpg" alt="Image 1">
-            <img src="i.jpeg" alt="Image 1">
-            <img src="nc3.jpg" alt="Image 3">
-            <img src="nc4.jpg" alt="Image 3">
-            <img src="nc5.jpg" alt="Image 3">
-            <img src="nc7.jpg" alt="Image 3">
+            <img src="nh1.jpg" alt="Image 1">
+            <img src="nh2.jpg" alt="Image 1">
+            <img src="nh3.jpg" alt="Image 3">
             <div class="arrow prev">&lt;</div>
             <div class="arrow next">&gt;</div>
           </div>
           <div class="text-container">
-            <h3>National Certificate 1/2/3 for ICT Students</h3>
-            <p>The National Certificate (NC) program offers ICT strand students the opportunity to gain industry-recognized certifications, validating their skills and knowledge in the field of Information and Communications Technology.</p>
+            <h3>National Certificate 1/2/3 for H.E Students</h3>
+            <p>The National Certificate for Home Economics students validates their mastery of essential skills in various areas such as food preparation and cooking, textile and clothing technology, household services, and entrepreneurship, empowering them to pursue diverse career paths in culinary arts, hospitality management, fashion and textile industry, or establish their own home-based enterprises with confidence.</p>
           </div>
         </div>
       </section>
 
       <section id="gallery">
-        <h2 class="section-title">Courses for ICT Students</h2>
+        <h2 class="section-title">Courses for H.E Students</h2>
         <div class="gallery-container">
           <div class="gallery-item">
-            <div class="subtitle">BS in Information Technology</div>
-            <img src="e.jpg" alt="JCI">
+            <div class="subtitle">BS in Culinary Arts </div>
+            <img src="jhe1.jpg" alt="JCI">
             <div class="image-overlay">
-              <h3>BS in Information Technology</h3>
-              <p class="container-paragraph">BSIT program prepares students to be IT professionals who are able to perform installation, operation, development, maintenance and administration of computer applications.</p>
+              <h3>BS in Culinary Arts</h3>
+              <p class="container-paragraph">The Bachelor of Science in Culinary Arts is a four-year degree program that covers everything from the preparation, cooking, plating, presentation and serving of food.</p>
             </div>
           </div>
           <div class="gallery-item">
-            <div class="subtitle">BS in Industrial Technology</div>
-            <img src="a.jpg" alt="bfp">
+            <div class="subtitle">BS in Interior Designing</div>
+            <img src="jhe3.jpg" alt="pnp">
             <div class="image-overlay">
-              <h3>BS in Industrial Technology</h3>
-              <p class="container-paragraph">The Bachelor in Industrial Technology is a four-year degree program designed to prepare students for higher industrial workforce who is equipped with technical, managerial, research and entrepreneurial competencies in the different fields in industrial technology</p>
+              <h3>BS in Interior Designing</h3>
+              <p class="container-paragraph">The Bachelor of Science in Interior Designing is a program that focuses on creating functional and visually appealing interior spaces. It covers design principles, space planning, color theory, furniture design, and CAD software. </p>
             </div>
           </div>
           <div class="gallery-item">
-            <div class="subtitle">Computer Engineering</div>
-            <img src="d.jpg" alt="pnp">
+            <div class="subtitle">BS in Nutrition</div>
+            <img src="jhe4.jpg" alt="pnp">
             <div class="image-overlay">
-              <h3>Computer Engineering</h3>
-              <p class="container-paragraph">Computer Engineering integrates several fields of electrical engineering and computer science and includes the study of hardware, software, and their integration</p>
+              <h3>BS in Nutrition</h3>
+              <p class="container-paragraph">The Bachelor of Science in Nutrition is a program that focuses on the study of food, dietetics, and human nutrition. Graduates can pursue careers as nutritionists, dietitians, or work in various healthcare and food-related industries.</p>
             </div>
           </div>
           <div class="gallery-item">
-            <div class="subtitle">Computer Science</div>
-            <img src="h.jpg" alt="sorop">
+            <div class="subtitle">BS in Tourism Management</div>
+            <img src="jhe5.jpg" alt="pnp">
             <div class="image-overlay">
-              <h3>Computer Science</h3>
-              <p class="container-paragraph">Computer Science degree involves computers and computer systems. These programs teach you how to design, test, and analyze different systems and software. You'll also study the theory and mathematics of computation so you can find solutions to problems. Common computer science courses include: Algorithms.</p>
+              <h3>BS in Tourism Management</h3>
+              <p class="container-paragraph">The Bachelor of Science in Tourism Management is a program focused on studying the tourism and hospitality industry. It prepares students for careers in hotels, travel agencies, event management, and tourism marketing.</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="subtitle">BS in Hospitality and Restaurant Management</div>
+            <img src="jhe2.png" alt="bfp">
+            <div class="image-overlay">
+              <h3>BS in Hospitality and Restaurant Management</h3>
+              <p class="container-paragraph">The Bachelor of Science in Hospitality and Restaurant Management is a four-year degree program that covers the process of planning, development, human resource management of the different aspects of the hotel, restaurant, and resorts operations.</p>
             </div>
           </div>
         </div>
       </section>
       
       <section id="job">
-        <h2 class="job-title">Jobs for ICT Students</h2>
+        <h2 class="job-title">Jobs for H.E Students</h2>
         <div class="job-gallery-container">
             <div class="job-gallery-item">
-                <img src="b.jpg" alt="JCI">
+                <img src="hej.jpg" alt="JCI">
                 <div class="job-image-overlay">
-                    <h3>Junior Programmer</h3>
+                    <h3>Chef</h3>
                 </div>
             </div>
             <div class="job-gallery-item">
-                <img src="web.jpg" alt="bfp">
+                <img src="hej0.jpg" alt="bfp">
                 <div class="job-image-overlay">
-                    <h3>Web Developer</h3>
+                    <h3>Baker</h3>
                 </div>
             </div>
             <div class="job-gallery-item">
-                <img src="g.jpg" alt="pnp">
+                <img src="hej1.jpg" alt="bfp">
                 <div class="job-image-overlay">
-                    <h3>System Analyst</h3>
+                    <h3>Dietitian</h3>
                 </div>
             </div>
             <div class="job-gallery-item">
-                <img src="game.jpg" alt="sorop">
+                <img src="hej2.jpg" alt="pnp">
                 <div class="job-image-overlay">
-                    <h3>Game Designer</h3>
+                    <h3>Interior Designer</h3>
                 </div>
             </div>
             <div class="job-gallery-item">
-                <img src="3d.jpg" alt="bfp">
+                <img src="hej3.jpg" alt="sorop">
                 <div class="job-image-overlay">
-                    <h3>3D Animator</h3>
+                    <h3>Fashion Designer</h3>
+                </div>
+            </div>
+            <div class="job-gallery-item">
+                <img src="hej4.jpg" alt="bfp">
+                <div class="job-image-overlay">
+                    <h3>Event Planner</h3>
                 </div>
             </div>
         </div>
