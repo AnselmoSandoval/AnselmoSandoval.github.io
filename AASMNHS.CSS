@@ -341,44 +341,64 @@ nav ul li a:hover{
     color: #2367a4;
 }
 
-#Achievements {
-    text-align: center;
-    padding: 50px 0;
-  }
-  
-  #Achievements h2 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 30px;
-  }
-  
-  .achievements-slider {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .achievement {
-    width: 300px;
-    margin: 0 20px;
-    text-align: center;
-  }
-  
-  .achievement img {
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
-    margin-bottom: 20px;
-  }
-  
-  .achievement h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-  
-  .achievement p {
-    font-size: 16px;
-    color: #777;
-  }
+#gallery {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.section-title {
+  font-size: 50px;
+  margin-bottom: 30px;
+  color: #044904;
+}
+
+.section-title:hover {
+  color: #e2be1a;
+ }
+
+.gallery-item {
+  display: inline-block;
+  margin: 30px;
+  margin-bottom: 70px;
+  position: relative;
+}
+
+.gallery-item a {
+  display: block;
+}
+
+.gallery-item img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 30px;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .image-overlay {
+  opacity: 1;
+}
+
+.image-overlay h3 {
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  padding: 10px;
+}
   
   .slick-prev,
   .slick-next {
