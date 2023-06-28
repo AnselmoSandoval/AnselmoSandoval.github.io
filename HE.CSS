@@ -135,40 +135,6 @@ nav ul li a:hover {
         color: #e2be1a;
     }
     
-    /* Adding animation for the logo */
-    .slideshow-container::after {
-        content: "";
-        position: absolute;
-        top: 30%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 200px;
-        height: 200px;
-        background-image: url('ict.png'); /* Replace 'logo.png' with your logo image path */
-        background-size: cover;
-        background-position: center;
-        animation: flip 5.4s infinite; /* Adjust the animation duration as desired */
-        z-index: 3;
-    }
-
-    .logo-container {
-        text-align: center;
-        margin-bottom: 20px;
-    }
-    
-    
-    @keyframes flip {
-        0% {
-            transform: translate(-50%, -50%) rotateY(0deg);
-        }
-        50% {
-            transform: translate(-50%, -50%) rotateY(180deg);
-        }
-        100% {
-            transform: translate(-50%, -50%) rotateY(360deg);
-        }
-    }
-
 /* ICT Strand section styles */
 #ICTStrand {
     padding: 50px;
@@ -485,81 +451,119 @@ footer {
         font-size: 0.9rem;
     }
 }
+
+/* Media queries */
+@media (max-width: 768px) {
+  nav {
+      padding: 10px;
+  }
+
+  nav .LogoAndText img {
+      width: 40px;
+  }
+
+  nav .SchoolName {
+      font-size: 1.4rem;
+  }
+
+  nav ul li a {
+      font-size: 1rem;
+  }
+
+  #Home h2 {
+      font-size: 2rem;
+  }
+
+  #Home p {
+      width: 80%;
+      font-size: 0.8rem;
+  }
+
+  #Home a {
+      font-size: 0.8rem;
+  }
+
+  #ICTStrand p,
+  #Jobs p,
+  #CSS p {
+      font-size: 0.9rem;
+  }
+}
 /* Show menu icon only in mobile view */
 @media screen and (max-width: 768px) {
-    .nav-links {
-      display: none;
-    }
-  
-    .menu-icon {
-      display: block;
-      color: rgb(16, 109, 39);
-      font-size: 1.8rem;
-      cursor: pointer;
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      /* Adjust the top and right values as needed to position the icon */
-    }
-  
-    .menu-box {
-      display: none;
-      background-color: #fff;
-      position: fixed;
-      width: 100%;
-      top: 80px;
-      left: 0;
-      padding: 20px;
-      z-index: 999;
-    }
-  
-    .menu-box ul {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .menu-box ul li {
-      margin: 10px 0;
-    }
-  
-    .menu-box ul li a {
-      text-decoration: none;
-      color: rgb(16, 109, 39);
-      font-size: 20px;
-      font-weight: 500;
-      transition: 0.3s ease;
-    }
-  
-    .menu-box ul li a:hover {
-      color: rgb(219, 235, 7);
-    }
-  
-    /* Show menu box when menu icon is checked */
-    #menu-toggle:checked ~ .menu-box {
-      display: block;
-    }
-    
-    /* Hide menu box when menu icon is not checked */
-    #menu-toggle:not(:checked) ~ .menu-box {
-      display: none;
-    }
-     /* Hide the moving logo */
-  .logo {
-    display: none !important;
+  .nav-links {
+    display: none;
   }
+
+  .menu-icon {
+    display: block;
+    color: rgb(16, 109, 39);
+    font-size: 1.8rem;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    /* Adjust the top and right values as needed to position the icon */
+  }
+
+  .menu-box {
+    display: none;
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 80px;
+    left: 0;
+    padding: 20px;
+    z-index: 999;
+  }
+
+  .menu-box ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-box ul li {
+    margin: 10px 0;
+  }
+
+  .menu-box ul li a {
+    text-decoration: none;
+    color: rgb(16, 109, 39);
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.3s ease;
+  }
+
+  .menu-box ul li a:hover {
+    color: rgb(219, 235, 7);
+  }
+
+  /* Show menu box when menu icon is checked */
+  #menu-toggle:checked ~ .menu-box {
+    display: block;
   }
   
-  /* Additional CSS for desktop view */
-  @media screen and (min-width: 769px) {
-    .menu-icon {
-      display: none;
-    }
-  
-    .nav-links {
-      display: flex;
-      justify-content: flex-end;
-    }
+  /* Hide menu box when menu icon is not checked */
+  #menu-toggle:not(:checked) ~ .menu-box {
+    display: none;
   }
+   /* Hide the moving logo */
+.logo {
+  display: none !important;
+}
+}
+
+/* Additional CSS for desktop view */
+@media screen and (min-width: 769px) {
+  .menu-icon {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
 
